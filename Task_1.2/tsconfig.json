@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "strictNullChecks": false,
+    "target": "es6",
+    "module": "es6",
+    "moduleResolution": "Node",
+    "baseUrl": ".",
+    "typeRoots": ["./node_modules/@types"],
+    "paths": {
+      "@configs/*": ["src/configs/*"],
+      "@data/*": ["src/data/*"],
+      "@env/*": ["src/env/*"],
+      "@fixtures/*": ["src/fixtures/*"],
+      "@locators/*": ["src/pages/locators/*"],
+      "@pages/*": ["src/pages/page_objects/*"],
+      "@helpers/*": ["src/helpers/types/*", "src/helpers/constants/*"]
+    },
+    "resolveJsonModule": true,
+    "declaration": true,
+    "allowJs": true,
+    "checkJs": false,
+    "strict": false,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "removeComments": true,
+    "allowSyntheticDefaultImports": true,
+    "noImplicitAny": false
+  },
+  "include": ["../*", "./*", "./src", "tests"],
+  "exclude": ["libs"]
+}
