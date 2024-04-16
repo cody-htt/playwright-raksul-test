@@ -1,18 +1,14 @@
-import { test, expect } from '@playwright/test';
+import { WebTest, expect } from '@fixtures/BaseTest';
 
-test('has title', async ({ page }) => {
-  await page.goto('https://playwright.dev/');
+WebTest.describe.parallel('RAKSUL-FORM-E2E-TEST', () => {
+  WebTest.beforeEach('Launch browser and open the page', async ({ formPage }) => {
+    await formPage.navigate();
+  });
 
-  // Expect a title "to contain" a substring.
-  await expect(page).toHaveTitle(/Playwright/);
-});
-
-test('get started link', async ({ page }) => {
-  await page.goto('https://playwright.dev/');
-
-  // Click the get started link.
-  await page.getByRole('link', { name: 'Get started' }).click();
-
-  // Expects page to have a heading with the name of Installation.
-  await expect(page.getByRole('heading', { name: 'Installation' })).toBeVisible();
+  WebTest('Validate the form page URL', async ({ formPage }) => {
+    await WebTest.step('Check the URL', async () => {
+      const url = await formPage.getCurrentUrl();
+      expect(url).toContain('/recruit-qa-engineer-work-sample');
+    });
+  });
 });

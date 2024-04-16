@@ -1,9 +1,9 @@
-import { test as baseTest } from '@playwright/test';
+import { test } from '@playwright/test';
 import Env from '@configs/Env';
 import { PageObjects } from '@helpers/TestTypes';
 import FormPage from '@pages/FormPage';
 
-export const WebTest = baseTest.extend<PageObjects>({
+export const WebTest = test.extend<PageObjects>({
   formPage: async ({ page }, use) => {
     await use(new FormPage(page));
   },

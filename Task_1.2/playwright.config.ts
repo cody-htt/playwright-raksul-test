@@ -25,7 +25,7 @@ export default defineConfig({
     /**
      * Maximum time expect() should wait for the condition to be met.
      */
-    timeout: process.env.CI === 'true' ? globalTimeout * 3 : globalTimeout,
+    timeout: process.env.CI === 'true' ? globalTimeout * 3 : globalTimeout
   },
   // Parallel execution options
   fullyParallel: true,
@@ -48,7 +48,7 @@ export default defineConfig({
      * Collect trace when retrying the failed test.
      * See https://playwright.dev/docs/trace-viewer
      */
-    trace: 'retain-on-failure',
+    trace: 'retain-on-failure'
   },
 
   /* Configure projects for major browsers */
@@ -57,10 +57,10 @@ export default defineConfig({
       name: 'RAKSUL-FORM-E2E-TEST',
       use: {
         ...devices['Desktop Chrome'],
-        headless: process.env.CI === 'true',
+        headless: process.env.CI === 'true'
       },
       // Filter test cases for this project execution script
-      grep: [/E2E/],
-    },
-  ],
+      grep: [/E2E/]
+    }
+  ]
 });

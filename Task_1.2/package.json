@@ -3,7 +3,15 @@
   "version": "1.0.0",
   "description": "<p align=\"center\">\r   <a href=\"\" rel=\"noopener\">\r  <img width=300px height=200px src=\"./assets/playwright_logo.webp\" alt=\"Project logo\"></a>\r </p>",
   "main": "index.js",
-  "scripts": {},
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "scripts": {
+    "install:deps": "npx playwright install-deps",
+    "install:browser": "npx playwright install --with-deps chromium",
+    "test:local": "cross-env ENV=dev CI=false npx playwright test --project=RAKSUL-FORM-E2E-TEST",
+    "test:ci": "cross-env ENV=dev CI=true npx playwright test --project=RAKSUL-FORM-E2E-TEST"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",

@@ -6,4 +6,8 @@ export default class FormPage extends BasePage {
   constructor(page: Page) {
     super(page);
   }
+
+  public async navigate(): Promise<void> {
+    await this.goToPage('/recruit-qa-engineer-work-sample');
+  }
 }

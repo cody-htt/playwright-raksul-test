@@ -117,7 +117,7 @@ export default class BasePage {
    * Returns the current URL of the page.
    * @returns {Promise<string>} A promise that resolves with the current URL of the page.
    */
-  protected async getCurrentUrl(): Promise<string> {
+  public async getCurrentUrl(): Promise<string> {
     return this.page.url();
   }
 
