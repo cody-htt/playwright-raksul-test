@@ -8,12 +8,12 @@
     <th><h3 align="center">Expected Result</h3></th>
   </tr>
   <tr>
-    <td rowspan="11">- Have a web browser installed (e.g Chrome, Firefox, ...)</br>- Have internet connection</th>
+    <td rowspan="13">- Have a web browser installed (e.g Chrome, Firefox, ...)</br>- Have internet connection</th>
   </tr>
   <tr>
     <td>RAKSUL-FORM-UI-01</td>
     <td>Verify form layout</td>
-    <td rowspan="11">1. Open the browser</br>2. Navigate to the URL (https://raksul.github.io/recruit-qa-engineer-work-sample/)</td>
+    <td rowspan="13">1. Open the browser</br>2. Navigate to the URL (https://raksul.github.io/recruit-qa-engineer-work-sample/)</td>
     <td>1. Observe the arrangement of input fields, labels, checkboxes, radio buttons and buttons</td>
     <td>The form layout is visually appealing and intuitive, with proper alignment and spacing</td>
   </tr>
@@ -49,24 +49,36 @@
   </tr>
   <tr>
     <td>RAKSUL-FORM-UI-07</td>
+    <td>Verify the "Where did you hear about us" dropdown list highlighting on hover</td>
+    <td>1. Hover on the dropdown list</td>
+    <td>The checkbox being hovered on is highlighted or outlined to indicate its active state</td>
+  </tr>
+  <tr>
+    <td>RAKSUL-FORM-UI-08</td>
+    <td>Verify the "Where did you hear about us" dropdown list displays list of options on click</td>
+    <td>1. Click on the "Where did you hear about us" dropdown list<br>2. Select each option</td>
+    <td>Each option is selectable and the selected option is displayed in the dropdown list after selection</td>
+  </tr>
+  <tr>
+    <td>RAKSUL-FORM-UI-09</td>
     <td>Verify consistency in styling</td>
     <td>1. Observe the styling of all elements (buttons, inputs, labels, etc.)</td>
     <td>All elements adhere to a consistent style, ensuring a unified visual experience</td>
   </tr>
   <tr>
-    <td>RAKSUL-FORM-UI-08</td>
+    <td>RAKSUL-FORM-UI-10</td>
     <td>Verify responsiveness</td>
     <td>1. Open the form on different devices or resize the browser window</br>2. Check the layout and behavior</td>
     <td>The form adjusts appropriately to different screen sizes, maintaining usability and readability</td>
   </tr>
   <tr>
-    <td>RAKSUL-FORM-UI-09</td>
+    <td>RAKSUL-FORM-UI-11</td>
     <td>Verify color scheme</td>
     <td>1. Observe the color scheme of the form</td>
     <td>The color scheme is consistent and visually appealing</td>
   </tr>
   <tr>
-    <td>RAKSUL-FORM-UI-10</td>
+    <td>RAKSUL-FORM-UI-12</td>
     <td>Verify typography</td>
     <td>1. Observe the typography of the form</td>
     <td>The typography (font size, font style, etc.) is consistent and readable</td>
