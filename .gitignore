@@ -2,11 +2,9 @@
 node_modules/
 
 # Report
-/test-results/
-/report
+/Task_1.2/test-results/
+/Task_1.2/report
 /playwright/.cache/
-/allure-results
-/allure-report
 
 # Local
 /.vscode
