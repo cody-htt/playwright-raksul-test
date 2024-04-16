@@ -13,7 +13,7 @@
   <tr>
     <td>RAKSUL-FORM-UI-01</td>
     <td>Verify form layout</td>
-    <td rowspan="13">1. Open the browser</br>2. Navigate to the URL (https://raksul.github.io/recruit-qa-engineer-work-sample/)</td>
+    <td rowspan="12">1. Open the browser</br>2. Navigate to the URL (https://raksul.github.io/recruit-qa-engineer-work-sample/)</td>
     <td>1. Observe the arrangement of input fields, labels, checkboxes, radio buttons and buttons</td>
     <td>The form layout is visually appealing and intuitive, with proper alignment and spacing</td>
   </tr>
