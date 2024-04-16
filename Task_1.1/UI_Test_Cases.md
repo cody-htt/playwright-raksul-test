@@ -1,4 +1,4 @@
-<table style=>
+<table style="100rem">
   <tr>
     <th><h3 align="center">Prerequisites</h3></th>
     <th><h3 align="center">Test Case Title</h3></th>
