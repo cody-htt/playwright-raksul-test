@@ -1,0 +1,13 @@
+# Deps
+node_modules/
+
+# Report
+/test-results/
+/report
+/playwright/.cache/
+/allure-results
+/allure-report
+
+# Local
+/.vscode
+.DS_Store
