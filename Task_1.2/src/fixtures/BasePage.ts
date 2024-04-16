@@ -22,7 +22,7 @@ export default class BasePage {
       timeOut?: number;
       has?: Locator;
       hasText?: string;
-    },
+    }
   ): Promise<Locator> {
     // improve this window concept
     if (options?.tabId) {
@@ -31,12 +31,12 @@ export default class BasePage {
     if (options?.frame) {
       return this.page.frameLocator(options.frame).locator(value, {
         has: options?.has,
-        hasText: options?.hasText,
+        hasText: options?.hasText
       });
     }
     return this.page.locator(value, {
       has: options?.has,
-      hasText: options?.hasText,
+      hasText: options?.hasText
     });
   }
 
@@ -49,7 +49,7 @@ export default class BasePage {
       has?: Locator;
       hasText?: string;
       all?: boolean;
-    },
+    }
   ): Promise<Locator[]> {
     if (options?.tabId) {
       this.page = this.page.context().pages()[options.tabId];
@@ -57,7 +57,7 @@ export default class BasePage {
 
     const locatorOptions = {
       has: options?.has,
-      hasText: options?.hasText,
+      hasText: options?.hasText
     };
 
     let locators: Locator[];
@@ -310,7 +310,7 @@ export default class BasePage {
   protected async waitForElementState(
     locator: string,
     state: 'attached' | 'detached' | 'visible' | 'hidden',
-    timeout = BasePage.LONG_WAIT,
+    timeout = BasePage.LONG_WAIT
   ) {
     const element = await this.findLocator(locator);
     element.waitFor({ state, timeout });

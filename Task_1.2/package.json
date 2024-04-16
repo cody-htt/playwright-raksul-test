@@ -9,8 +9,10 @@
   "scripts": {
     "install:deps": "npx playwright install-deps",
     "install:browser": "npx playwright install --with-deps chromium",
-    "test:local": "cross-env ENV=dev CI=false npx playwright test --project=RAKSUL-FORM-E2E-TEST",
-    "test:ci": "cross-env ENV=dev CI=true npx playwright test --project=RAKSUL-FORM-E2E-TEST"
+    "test:local:chromium": "cross-env ENV=dev CI=false npx playwright test --project=E2E-TEST-ON-CHROMIUM",
+    "test:local:firefox": "cross-env ENV=dev CI=false npx playwright test --project=E2E-TEST-ON-FIREFOX",
+    "test:ci:chromium": "cross-env ENV=dev CI=true npx playwright test --project=E2E-TEST-ON-CHROMIUM",
+    "test:ci:firefox": "cross-env ENV=dev CI=true npx playwright test --project=E2E-TEST-ON-FIREFOX"
   },
   "keywords": [],
   "author": "",

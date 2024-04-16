@@ -1,4 +1,4 @@
-import { defineConfig, devices } from '@playwright/test';
+import { defineConfig } from '@playwright/test';
 
 const globalTimeout = 10 * 1000; /** 10 seconds */
 
@@ -54,10 +54,39 @@ export default defineConfig({
   /* Configure projects for major browsers */
   projects: [
     {
-      name: 'RAKSUL-FORM-E2E-TEST',
+      name: 'E2E-TEST-ON-CHROMIUM',
       use: {
-        ...devices['Desktop Chrome'],
-        headless: process.env.CI === 'true'
+        browserName: 'chromium',
+        headless: process.env.CI === 'true',
+        screenshot: 'on',
+        trace: 'retain-on-failure',
+        video: {
+          mode: 'retain-on-failure',
+          size: { width: 1920, height: 1080 }
+        },
+        viewport: null,
+        launchOptions: {
+          args: ['--start-maximized']
+        }
+      },
+      // Filter test cases for this project execution script
+      grep: [/E2E/]
+    },
+    {
+      name: 'E2E-TEST-ON-FIREFOX',
+      use: {
+        browserName: 'firefox',
+        headless: process.env.CI === 'true',
+        screenshot: 'on',
+        trace: 'retain-on-failure',
+        video: {
+          mode: 'retain-on-failure',
+          size: { width: 1920, height: 1080 }
+        },
+        viewport: null,
+        launchOptions: {
+          args: ['--kiosk']
+        }
       },
       // Filter test cases for this project execution script
       grep: [/E2E/]
