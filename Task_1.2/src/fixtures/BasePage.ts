@@ -161,9 +161,9 @@ export default class BasePage {
     try {
       if (typeof locator === 'string') {
         const element = await this.findLocator(locator);
-        await element.click({ timeout: BasePage.LONG_WAIT });
+        await element.click({ timeout: 2000 });
       } else {
-        await locator.click({ timeout: BasePage.LONG_WAIT });
+        await locator.click({ timeout: 2000 });
       }
     } catch (error) {
       throw new Error(`Failed with ${error.message}`);
@@ -222,6 +222,39 @@ export default class BasePage {
     try {
       const dropdown = await this.findLocator(locator);
       await dropdown.selectOption(options);
+    } catch (error) {
+      throw new Error(`Failed with ${error.message}`);
+    }
+  }
+
+  /**
+   * Checks the checkbox element located by the given locator.
+   * @param locator - The locator string used to find the checkbox element.
+   * @param timeout - The maximum amount of time to wait for the checkbox element to be checked.
+   * @param options - The options to select the checkbox element.
+   * @throws An error if the checkbox element cannot be found or checked.
+   */
+  protected async selectCheckBoxOfSvcOfInterest(
+    locator: string,
+    timeout = BasePage.LONG_WAIT,
+    options: { force?: boolean; noWaitAfter: true; trial?: boolean }
+  ) {
+    try {
+      const element = await this.findLocator(locator);
+      await element.check({ ...options, timeout });
+    } catch (error) {
+      throw new Error(`Failed with ${error.message}`);
+    }
+  }
+
+  protected async selectCheckboxFromGroup(
+    locator: string,
+    text: string,
+    options?: { force?: boolean; noWaitAfter: true; trial?: boolean }
+  ) {
+    try {
+      const element = await this.findLocator(locator);
+      await element.getByText(text).check({ ...options, timeout: BasePage.LONG_WAIT });
     } catch (error) {
       throw new Error(`Failed with ${error.message}`);
     }
