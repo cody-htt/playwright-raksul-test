@@ -37,10 +37,21 @@ interaction
 ├── playwright.config.ts
 ├── src
 │   ├── configs
+│   │   ├── Env.ts
+│   │   └── ReadEnv.ts
 │   ├── data
+│   │   ├── InvalidData.json
+│   │   └── ValidData.json
 │   ├── fixtures
+│   │   ├── BasePage.ts
+│   │   └── BaseTest.ts
 │   ├── helpers
+│   │   ├── libs
+│   │   ├── strings
+│   │   └── types
 │   └── pages
+│       ├── locators
+│       └── page_objects
 ├── tests
 │   └── test_raksul_form.spec.ts
 └── tsconfig.json
