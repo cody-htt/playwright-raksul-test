@@ -7,5 +7,7 @@ export const FormPageLocators = {
   infoSourceListItem: '//div[@id="form_item_infoSource_list"]/following-sibling::div//div[text()="{Item}"]',
   svcInterestField: '#field_servicesOfInterest',
   assocTypeField: '#form_item_typeOfAssociation',
-  expTextArea: '#form_item_explanation'
+  expTextArea: '#form_item_explanation',
+  submitBtn: '//button[@type="submit"]',
+  notiMsg: '//div[@class="notification"]//*[text()="{Item}"]'
 };

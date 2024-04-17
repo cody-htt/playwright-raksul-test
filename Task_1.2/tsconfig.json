@@ -13,7 +13,7 @@
       "@fixtures/*": ["src/fixtures/*"],
       "@locators/*": ["src/pages/locators/*"],
       "@pages/*": ["src/pages/page_objects/*"],
-      "@helpers/*": ["src/helpers/types/*", "src/helpers/constants/*", "src/helpers/libs/*"]
+      "@helpers/*": ["src/helpers/types/*", "src/helpers/strings/*", "src/helpers/libs/*"]
     },
     "resolveJsonModule": true,
     "declaration": true,
