@@ -57,7 +57,7 @@ interaction
 └── tsconfig.json
 ```
 
-## ⚠️ Prerequisites
+## ⚠️ Prerequisites <a name = "prerequisites"></a>
 
 1. Have NodeJS install on your machine (https://nodejs.org/en/download)
 2. Have an IDE install on your machine (VS Code is recommended
