@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
     inputs:
       browser:
-        description: 'Browser to use for tests'
+        description: 'Browser to use for tests (chromium, firefox)'
         required: true
         default: 'chromium'
 jobs:
