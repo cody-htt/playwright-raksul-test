@@ -9,5 +9,6 @@ export const FormPageLocators = {
   assocTypeField: '#form_item_typeOfAssociation',
   expTextArea: '#form_item_explanation',
   submitBtn: '//button[@type="submit"]',
-  notiMsg: '//div[@class="notification"]//*[text()="{Item}"]'
+  alertMessage: '//div[@role="alert"]//*[text()="{Item}"]',
+  checkIcon: '//div[@role="alert"]//span[@aria-label="check-circle"]'
 };

@@ -1,3 +1,6 @@
 {
-  "successfulSubmission": "Your inquiry has been submitted successfully!"
+  "successfulSubmission": "Your inquiry has been submitted successfully!",
+  "infoSource": ["Search engines", "Recommended by friend", "Social media", "Email marketing", "Other"],
+  "serviceOfInterest": ["Printing", "Logistics", "Advertisement"],
+  "typeOfAssociation": ["Prospect", "Partner", "Reseller", "Vendor", "Other"]
 }

@@ -130,7 +130,7 @@ export default class BasePage {
   protected async enterText(locator: string, text: string) {
     try {
       const element = await this.findLocator(locator);
-      await element.fill(text);
+      await element.fill(text, { timeout: BasePage.LONG_WAIT });
     } catch (error) {
       throw new Error(`Failed with ${error.message}`);
     }
@@ -161,9 +161,9 @@ export default class BasePage {
     try {
       if (typeof locator === 'string') {
         const element = await this.findLocator(locator);
-        await element.click({ timeout: 2000 });
+        await element.click({ timeout: BasePage.LONG_WAIT });
       } else {
-        await locator.click({ timeout: 2000 });
+        await locator.click({ timeout: BasePage.LONG_WAIT });
       }
     } catch (error) {
       throw new Error(`Failed with ${error.message}`);
@@ -357,17 +357,6 @@ export default class BasePage {
   protected async isElementVisible(locator: string) {
     const element = await this.findLocator(locator);
     return element.first().isVisible({ timeout: BasePage.LONG_WAIT });
-  }
-
-  /**
-   * Checks if the element located by the given locator is not visible.
-   * @param locator - The locator string used to find the element.
-   * @returns A boolean indicating whether the element is not visible.
-   */
-  protected async isElementNotVisible(locator: string) {
-    const element = await this.findLocator(locator);
-    const isNotVisible = await element.first().isVisible({ timeout: BasePage.LONG_WAIT });
-    return !isNotVisible;
   }
 
   /**

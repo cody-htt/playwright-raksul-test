@@ -32,9 +32,9 @@ export default defineConfig({
   // Retry on CI only
   retries: process.env.CI === 'true' ? 0 : 0,
   // Number of workers for parallel execution on CI
-  workers: process.env.CI === 'true' ? 4 : 6,
+  workers: process.env.CI === 'true' ? 2 : 3,
   // Reporters to use
-  reporter: [['html', { outputFolder: `./report/html-report`, open: 'never' }]],
+  reporter: [['html', { outputFolder: `./report/html-report`, open: 'never' }], ['line']],
   // Global setup script
   globalSetup: require.resolve('./global-setup.ts'),
   // Global teardown script

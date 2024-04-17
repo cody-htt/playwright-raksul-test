@@ -1,0 +1,20 @@
+[
+  {
+    "email": "_01@raksul.com",
+    "lastName": "Auto",
+    "firstName": "Test",
+    "infoSource": "",
+    "svcInterest": "",
+    "assocType": "",
+    "explanation": "Playwright Automation Test"
+  },
+  {
+    "email": "_02@raksul.com",
+    "lastName": "Auto",
+    "firstName": "Test",
+    "infoSource": "",
+    "svcInterest": "",
+    "assocType": "",
+    "explanation": "Playwright Automation Test"
+  }
+]

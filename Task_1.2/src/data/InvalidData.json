@@ -1,0 +1,72 @@
+[
+  {
+    "email": "",
+    "lastName": "Auto",
+    "firstName": "Test",
+    "infoSource": "Social media",
+    "svcInterest": "Advertisement",
+    "assocType": "Reseller",
+    "explanation": "Playwright Automation Test",
+    "errorMsg": "'email' is required"
+  },
+  {
+    "email": "AutoTest",
+    "lastName": "Auto",
+    "firstName": "Test",
+    "infoSource": "Recommended by friend",
+    "svcInterest": "Logistics",
+    "assocType": "Vendor",
+    "explanation": "Playwright Automation Test",
+    "errorMsg": "'email' is not a valid email"
+  },
+  {
+    "email": "AutoTest@raksul.com",
+    "lastName": "",
+    "firstName": "Test",
+    "infoSource": "Other",
+    "svcInterest": "Printing",
+    "assocType": "Partner",
+    "explanation": "Playwright Automation Test",
+    "errorMsg": "'lastName' is required"
+  },
+  {
+    "email": "AutoTest@raksul.com",
+    "lastName": "Auto",
+    "firstName": "",
+    "infoSource": "Email marketing",
+    "svcInterest": "Advertisement",
+    "assocType": "Other",
+    "explanation": "Playwright Automation Test",
+    "errorMsg": "'firstName' is required"
+  },
+  {
+    "email": "AutoTest@raksul.com",
+    "lastName": "Auto",
+    "firstName": "Test",
+    "infoSource": "",
+    "svcInterest": "Printing",
+    "assocType": "Prospect",
+    "explanation": "Playwright Automation Test",
+    "errorMsg": "'infoSource' is required"
+  },
+  {
+    "email": "AutoTest@raksul.com",
+    "lastName": "Auto",
+    "firstName": "Test",
+    "infoSource": "Recommended by friend",
+    "svcInterest": "",
+    "assocType": "Reseller",
+    "explanation": "Playwright Automation Test",
+    "errorMsg": "'servicesOfInterest' is required"
+  },
+  {
+    "email": "AutoTest@raksul.com",
+    "lastName": "Auto",
+    "firstName": "Test",
+    "infoSource": "Social media",
+    "svcInterest": "Printing",
+    "assocType": "",
+    "explanation": "Playwright Automation Test",
+    "errorMsg": "'typeOfAssociation' is required"
+  }
+]

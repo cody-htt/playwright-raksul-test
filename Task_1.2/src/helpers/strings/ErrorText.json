@@ -1,9 +1,0 @@
-{
-  "invalidEmail": "'email' is not a valid email",
-  "emptyEmail": "'email' is required",
-  "emptyLastName": "'lastName' is required",
-  "emptyFirstName": "'firstName' is required",
-  "emptyInfoSource": "'infoSource' is required",
-  "emptySvcInterest": "'servicesOfInterest' is required",
-  "emptyAssocType": "'typeOfAssociation' is required"
-}
